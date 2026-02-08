@@ -1,0 +1,141 @@
+/* Bootstrap Overrides and Custom Styles */
+.navbar {
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 15px 0 !important;
+}
+
+.navbar.scrolled {
+    background: rgba(10, 10, 10, 0.98) !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand h3 {
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #6a0dad, #ff69b4, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff69b4 !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #6a0dad, #ff69b4);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff69b4 !important;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: 1px solid #ff69b4 !important;
+    color: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 105, 180, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 105, 180, 0.3) !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #ff69b4 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 105, 180, 0.25) !important;
+    color: #ffffff !important;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #6a0dad, #ff69b4) !important;
+    border: none !important;
+    border-radius: 25px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3) !important;
+}
+
+.btn-outline-primary {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-outline-primary:hover {
+    background: #ffffff !important;
+    color: #6a0dad !important;
+    transform: translateY(-2px) !important;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, #6a0dad, #ff69b4) !important;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 105, 180, 0.3) !important;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.2);
+}
+
+.card-title {
+    color: #ff69b4 !important;
+}
+
+.card-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.badge {
+    background: rgba(255, 105, 180, 0.2) !important;
+    color: #87ceeb !important;
+}

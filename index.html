@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+    <title>🌸Hooriya DevLab - Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+
+    </div>
+
+    <!-- SVG defs used for clipping a nicer blob shape on the hero image -->
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;">
+        <defs>
+            <clipPath id="blobClip" clipPathUnits="objectBoundingBox">
+                <path
+                    d="M0.56,0.02 C0.74,0.05 0.92,0.13 0.96,0.32 C1.01,0.54 0.82,0.75 0.62,0.88 C0.41,1.02 0.18,0.86 0.06,0.62 C-0.04,0.38 0.13,0.12 0.38,0.05 C0.45,0.03 0.5,0.01 0.56,0.02 Z" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="nav-logo">
+                <h3>🌸 Hooriya <span>DevLab </span></h3>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-text">
+                        <h1 class="fade-in">I AM <span>HOORIYA</span></h1>
+                        <h2 class="fade-in">Web Developer & Designer</h2>
+                        <p class="fade-in">Creating modern digital experiences with clean code and creative design</p>
+                        <div class="hero-buttons fade-in">
+                            <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#contactModal"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image fade-in text-center">
+                        <img src="HERO SECTION IMAGE.png" alt="Hooriya" </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in text-center">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="about-image fade-in text-center">
+                        <img src="HERO SECTION IMAGE.png" alt="Hooriya"
+                            class="img-fluid rounded-circle border border-4 border-pink shadow about-profile-img"
+                            style="max-width: 300px; width: 100%; height: auto; aspect-ratio: 1;"
+                            onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face'">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="about-text fade-in">
+                        <h3>About Hooriya</h3>
+                        <p>Hi, I'm Hooriya, a passionate web developer and designer dedicated to creating stunning
+                            digital experiences. With expertise in modern web technologies, I transform ideas into
+                            responsive, user-friendly websites that make an impact.</p>
+                        <p><strong>Core Expertise:</strong> I specialize in HTML5, CSS3, JavaScript, and Bootstrap
+                            to
+                            build professional websites. Additionally, I offer comprehensive services including
+                            e-commerce development, custom logo design, UI/UX enhancement, and video editing to
+                            create a
+                            complete brand presence.</p>
+                        <p><strong>My Approach:</strong> I believe in writing clean, efficient code and putting the
+                            user
+                            at the center of every project. Each project is treated with meticulous attention to
+                            detail,
+                            ensuring pixel-perfect designs and seamless functionality across all devices.</p>
+                        <p><strong>What Drives Me:</strong> Continuous learning and growth are core to my
+                            philosophy. I
+                            stay updated with the latest web technologies and design trends to deliver cutting-edge
+                            solutions. I'm committed to transparent communication and turning your vision into
+                            reality.
+                        </p>
+                        <p><strong>Let's Collaborate:</strong> Whether you need a complete website redesign, a fresh
+                            e-commerce platform, or creative design services, I'm here to help. Let's create
+                            something
+                            extraordinary together!</p>
+                        <div class="about-info">
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <span>hafizahooriya@gmail.com</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fab fa-whatsapp text-success me-3"></i>
+                                <span><a href="https://wa.me/923214700500"
+                                        style="color: inherit; text-decoration: none;">WhatsApp:
+                                        03214700500</a></span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-phone text-info me-3"></i>
+                                <span>Phone: 03214700500</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-clock text-warning me-3"></i>
+                                <span>Available: 9:00 AM - 1:00 PM</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <span>Pakistan</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-briefcase text-primary me-3"></i>
+                                <span>Freelance Web Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in text-center">Skills</h2>
+
+            <!-- Web Development Skills -->
+            <div class="mb-5">
+                <h3 class="text-center mb-4 text-info">Web Development / Frontend</h3>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fab fa-html5 fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">HTML</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 90%"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">90%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fab fa-css3-alt fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">CSS</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 85%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">85%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fab fa-js fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">JavaScript</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">75%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fab fa-bootstrap fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">Bootstrap</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 80%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">80%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fas fa-shopping-cart fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">E-commerce Development</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%"
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">70%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fas fa-cog fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">Admin Panel Creation</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 65%"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">65%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design & Multimedia Skills -->
+            <div>
+                <h3 class="text-center mb-4 text-info">Design & Multimedia</h3>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fas fa-palette fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">Logo Design</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">75%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fas fa-pen-ruler fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">Graphic Design</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%"
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">70%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card fade-in h-100">
+                            <div class="skill-icon text-center mb-3">
+                                <i class="fas fa-video fa-3x"></i>
+                            </div>
+                            <h3 class="text-center">Video Editing</h3>
+                            <div class="progress mb-2" style="height: 8px;">
+                                <div class="progress-bar bg-gradient" role="progressbar" style="width: 80%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-info">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title fade-in text-center">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Class 11 Student</h3>
+                        <h4>Current Education</h4>
+                        <span class="timeline-date"> </span>
+                        <p>I am currently a Class 11 student, but I have been pursuing web and app development as a
+                            part-time study because it is my favorite skill and passion. From an early age, I have been
+                            curious about coding, designing websites, and creating digital solutions, and I enjoy
+                            turning ideas into functional, user-friendly projects.
+
+                            Alongside my studies, I have been learning HTML, CSS, JavaScript, and Bootstrap to build
+                            modern, responsive websites. I also explore logo design, video editing, and e-commerce
+                            website development, combining creativity with technical skills.
+
+                            I am committed to continuous learning, improving my skills, and delivering quality work. My
+                            goal is to grow as a developer while helping clients and users through clean, creative, and
+                            practical digital solutions.
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Experience</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="experience-text fade-in">
+                        <p>I have recently started my journey as a developer and am currently working at a starter
+                            level. While I do not yet have extensive professional experience, I have been actively
+                            learning and building projects to strengthen my skills.</p>
+                        <p>I focus on understanding client requirements carefully and completing work according to the
+                            given specifications. I am committed to delivering proper, clean, and functional results,
+                            even as I continue to grow and improve with each project.</p>
+                        <p>I believe that honesty, dedication, and attention to detail are essential at this stage of my
+                            career. My goal is to gain experience through real projects while providing reliable and
+                            quality work to clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title fade-in text-center">Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card fade-in h-100">
+                        <div class="service-head">
+                            <div class="service-icon-wrap"><i class="fas fa-code service-icon"></i></div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>Frontend Website Development (HTML, CSS, JavaScript)</li>
+                            <li>Responsive Web Design (Bootstrap)</li>
+                            <li>Personal &amp; Business Websites</li>
+                            <li>Landing Pages</li>
+                        </ul>
+                        <div class="mt-3 text-end">
+                            <button class="btn apply-service-btn" data-service="Web Development" data-bs-toggle="modal"
+                                data-bs-target="#serviceModal">Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card fade-in h-100">
+                        <div class="service-head">
+                            <div class="service-icon-wrap"><i class="fas fa-shopping-cart service-icon"></i></div>
+                            <h3>E-commerce Solutions</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>E-commerce Website Development</li>
+                            <li>Product Listing &amp; Store Setup</li>
+                            <li>Admin Panel Creation</li>
+                            <li>Basic Order &amp; Product Management</li>
+                        </ul>
+                        <div class="mt-3 text-end">
+                            <button class="btn apply-service-btn" data-service="E-commerce Solutions"
+                                data-bs-toggle="modal" data-bs-target="#serviceModal">Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card fade-in h-100">
+                        <div class="service-head">
+                            <div class="service-icon-wrap"><i class="fas fa-palette service-icon"></i></div>
+                            <h3>Design &amp; Creative</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>Logo Design</li>
+                            <li>Basic Graphic Design</li>
+                            <li>Video Editing</li>
+                        </ul>
+                        <div class="mt-3 text-end">
+                            <button class="btn apply-service-btn" data-service="Design & Creative"
+                                data-bs-toggle="modal" data-bs-target="#serviceModal">Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card fade-in h-100">
+                        <div class="service-head">
+                            <div class="service-icon-wrap"><i class="fas fa-hands-helping service-icon"></i></div>
+                            <h3>Support &amp; Learning-Based Work</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>Website Updates &amp; Fixes</li>
+                            <li>Design Improvements</li>
+                            <li>Beginner-friendly Development Support</li>
+                        </ul>
+                        <div class="mt-3 text-end">
+                            <button class="btn apply-service-btn" data-service="Support & Learning-Based Work"
+                                data-bs-toggle="modal" data-bs-target="#serviceModal">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    </section>
+
+    </section>
+
+    <!-- Project Preview Modal -->
+    <div class="modal fade" id="projectPreviewModal" tabindex="-1" aria-labelledby="projectPreviewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="projectPreviewTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="projectPreviewImage" src="" alt="" class="img-fluid w-100 rounded mb-3" />
+                    <p id="projectPreviewText" class="mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in text-center">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info fade-in">
+                        <h3>Let's Work Together</h3>
+                        <p>I'm always interested in hearing about new projects and opportunities. Whether you have a
+                            question or just want to say hi, feel free to get in touch!</p>
+                        <div class="contact-details">
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <span>hafizahooriya209@gmail.com</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fab fa-whatsapp text-success me-3"></i>
+                                <span><a href="https://wa.me/923214700500"
+                                        style="color: inherit; text-decoration: none;">WhatsApp: 03214700500</a></span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-phone text-info me-3"></i>
+                                <span>Phone: 03214700500</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-clock text-warning me-3"></i>
+                                <span>Available: 9:00 AM - 1:00 PM</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <span>Pakistan</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-briefcase text-primary me-3"></i>
+                                <span>Freelance Web Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form fade-in">
+                        <form id="contactForm" action="https://formsubmit.co/hafizahooriya@gmail.com" method="POST"
+                            class="needs-validation" novalidate>
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Submission from Portfolio Contact Form">
+                            <input type="hidden" name="_next"
+                                value="https://hafizahooriya.github.io/portfolio/index.html">
+
+                            <!-- Note: The _next URL should be your live site URL. If testing locally, it might not redirect back perfectly, but email will send. -->
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide your name.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="hafizahooriya@gmail.com" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message"
+                                    rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide a message.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <h3><span class="footer-flower">🌸</span><span class="footer-name">Hooriya DevLab</span></h3>
+                        <p>Web Developer & Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-decoration-none">Home</a></li>
+                            <li><a href="#about" class="text-decoration-none">About</a></li>
+                            <li><a href="#services" class="text-decoration-none">Services</a></li>
+                            <li><a href="#projects" class="text-decoration-none">Projects</a></li>
+                            <li><a href="#contact" class="text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://facebook.com" target="_blank" class="me-3"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="me-3"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                                target="_blank" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="footer-bottom text-center">
+                <p>&copy; 🌸Hooriya DevLab . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Get in touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-quick text-center mb-3">
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i><a href="mailto:hafizahooriya209@gmail.com"
+                                class="text-decoration-none contact-link">hafizahooriya209@gmail.com</a></p>
+                        <p class="mb-2"><i class="fab fa-whatsapp me-2 text-success"></i><a
+                                href="https://wa.me/923214700500" class="text-decoration-none contact-link">WhatsApp:
+                                03214700500</a></p>
+                        <p class="mb-2"><i class="fas fa-phone me-2 text-info"></i><a href="tel:03214700500"
+                                class="text-decoration-none contact-link">03214700500</a></p>
+                        <p class="mb-2"><i class="fas fa-clock me-2 text-warning"></i>Available: 9:00 AM - 1:00 PM</p>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i>Pakistan</p>
+                        <p class="mb-0"><i class="fas fa-briefcase me-2 text-primary"></i>Freelance Web Developer</p>
+                    </div>
+                    <hr class="border-secondary">
+                    <form id="contactModalForm" action="https://formsubmit.co/hafizahooriya@gmail.com" method="POST"
+                        class="needs-validation" novalidate>
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="New Submission from Hire Me Modal">
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="modal-name" name="name" placeholder="Your Name"
+                                required>
+                            <div class="invalid-feedback">Please provide your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="modal-email" name="email"
+                                placeholder="Your Email" required>
+                            <div class="invalid-feedback">Please provide a valid email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="modal-message" name="message" placeholder="Your Message"
+                                rows="4" required></textarea>
+                            <div class="invalid-feedback">Please provide a message.</div>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Apply Modal -->
+    <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel">Apply for <span id="serviceModalName">Service</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i><a href="mailto:hafizahooriya209@gmail.com"
+                            class="contact-link">hafizahooriya209@gmail.com</a></p>
+                    <p class="mb-2"><i class="fab fa-whatsapp me-2 text-success"></i><a
+                            href="https://wa.me/923214700500" class="contact-link">WhatsApp: 03214700500</a></p>
+                    <p class="mb-2"><i class="fas fa-phone me-2 text-info"></i><a href="tel:03214700500"
+                            class="contact-link">03214700500</a></p>
+                    <p class="mb-2"><i class="fas fa-clock me-2 text-warning"></i>Available: 9:00 AM - 1:00 PM</p>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i>Pakistan</p>
+                    <p class="mb-0"><i class="fas fa-briefcase me-2 text-primary"></i>Freelance Web Developer</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
